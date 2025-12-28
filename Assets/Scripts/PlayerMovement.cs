@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private bool isGrounded = false;
-    private bool isJumping = false;
+    private bool isJumping = false;  
 
     void Start()
     {
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
 
-
+        
         anim.SetBool("IsGrounded", isGrounded);
         anim.SetBool("isJumping", isJumping); 
         anim.SetFloat("VerticalVelocity", rb.linearVelocity.y);
@@ -36,29 +36,29 @@ public class PlayerMovement : MonoBehaviour
         float move = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
 
-
+        
         if (move > 0) sr.flipX = false;
         if (move < 0) sr.flipX = true;
 
-
+        
         anim.SetBool("isRunning", move != 0);
     }
 
     void Jump()
     {
-
+        
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-            isJumping = true;
+            isJumping = true;       
             isGrounded = false;
         }
 
-
+        
         if (isGrounded)
         {
-            isJumping = false;
+            isJumping = false;      
         }
     }
 
