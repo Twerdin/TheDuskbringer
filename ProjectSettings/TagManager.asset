@@ -6,16 +6,17 @@ TagManager:
   tags:
   - Ground
   - Trap
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
   - Post -Process Layer
-  - Ground
   - Water
   - UI
-  - 
-  - 
+  - UI
+  - Ground
+  - Enemy
   - 
   - 
   - 

@@ -35,7 +35,7 @@ public class LedgeGrab : MonoBehaviour
 
         if (isGrabbing)
         {
-            // Tırmanma tuşu (W veya ↑)
+            
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 Climb();
@@ -50,7 +50,7 @@ public class LedgeGrab : MonoBehaviour
             ledgePos.y + climbYOffset
         );
 
-        rb.gravityScale = 3; // kendi gravity’in neyse onu yaz
+        rb.gravityScale = 3; 
         isGrabbing = false;
     }
 }
