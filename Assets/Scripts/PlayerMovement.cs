@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
         anim.SetBool("IsGrounded", isGrounded);
         anim.SetBool("isJumping", isJumping); 
-        anim.SetFloat("VerticalVelocity", rb.linearVelocity.y);
+        
     }
 
     void Move()
