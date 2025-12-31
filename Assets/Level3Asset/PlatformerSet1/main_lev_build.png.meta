@@ -107,8 +107,8 @@ TextureImporter:
       name: main_lev_build_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 1168
+        x: 1001
+        y: 941
         width: 96
         height: 64
       alignment: 0
@@ -2998,7 +2998,12 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 16, y: 31.5}
+        - {x: 16, y: 31.5}
+        - {x: -16, y: -1.5}
+        - {x: -16, y: -31.5}
+        - {x: 16, y: -31.5}
       tessellationDetail: 0
       bones: []
       spriteID: 018988476b49cde48b98451f0f6242e8
