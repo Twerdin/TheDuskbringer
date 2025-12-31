@@ -1263,7 +1263,7 @@ Transform:
   m_GameObject: {fileID: 239990430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.75, y: 17.91, z: -10}
+  m_LocalPosition: {x: 44.38, y: 4.3099995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20952,6 +20952,46 @@ PrefabInstance:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Damping.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Damping.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: DeadZoneDepth
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Lookahead.Time
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Lookahead.Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Lookahead.IgnoreY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Lookahead.Smoothing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Composition.ScreenPosition.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Composition.HardLimits.Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035728679657419412, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: Composition.HardLimits.Size.y
+      value: 2.992248
+      objectReference: {fileID: 0}
     - target: {fileID: 3387177322508865647, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -20964,13 +21004,17 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7068657803575885018, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2486174
+      objectReference: {fileID: 0}
     - target: {fileID: 8135015898007994141, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.75
+      value: 44.38
       objectReference: {fileID: 0}
     - target: {fileID: 8135015898007994141, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.01
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 8135015898007994141, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.z
