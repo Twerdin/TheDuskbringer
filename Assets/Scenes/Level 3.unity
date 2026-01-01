@@ -2047,7 +2047,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 1460752333, guid: 6d28f55f1b0572546b2632db94416d69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3890,7 +3890,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 268699839072389607, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 671744145562011936, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3934,7 +3934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1961370454844550271, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4232608819129838008, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_Name
@@ -4459,7 +4459,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 593779734, guid: 6d28f55f1b0572546b2632db94416d69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4481,7 +4481,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24.37, y: -5.29, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.07, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4520,7 +4520,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.1911428, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4530,7 +4530,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14, y: 2}
+  m_Size: {x: 13.617714, y: 2}
   m_EdgeRadius: 0
 --- !u!1 &1108109325
 GameObject:
@@ -5644,7 +5644,7 @@ Transform:
   m_GameObject: {fileID: 1319913800}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.51, y: 3.4699996, z: -10}
+  m_LocalPosition: {x: -19.89, y: -0.2200005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6242,11 +6242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135015898007994141, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.51
+      value: -19.89
       objectReference: {fileID: 0}
     - target: {fileID: 8135015898007994141, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.03
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 8135015898007994141, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6280,7 +6280,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4331795759562283763, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -8386,7 +8387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 268699839072389607, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 671744145562011936, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8427,6 +8428,10 @@ PrefabInstance:
     - target: {fileID: 671744145562011936, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961370454844550271, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4232608819129838008, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_Name
@@ -8755,7 +8760,7 @@ Transform:
   m_GameObject: {fileID: 1860704427}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.3, y: -1.41, z: 0}
+  m_LocalPosition: {x: 10.3, y: -1.38125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8835,7 +8840,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865172924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bb7bcb946cfb7b469ca4620004162ae, type: 3}
+  m_Script: {fileID: 11500000, guid: bfc5f89b8635af445988d79262d0cbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
   sceneName: 
@@ -8952,7 +8957,7 @@ Transform:
   m_GameObject: {fileID: 1865172924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.43, y: 5.74, z: 0}
+  m_LocalPosition: {x: 59.25, y: -0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9219,7 +9224,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.020677328, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9229,7 +9234,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 14, y: 2}
+  m_Size: {x: 13.9679785, y: 2}
   m_EdgeRadius: 0
 --- !u!1 &1891033180
 GameObject:
@@ -9242,6 +9247,7 @@ GameObject:
   - component: {fileID: 1891033181}
   - component: {fileID: 1891033183}
   - component: {fileID: 1891033182}
+  - component: {fileID: 1891033184}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9367,6 +9373,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891033180}
   m_CullTransparentMesh: 1
+--- !u!114 &1891033184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891033180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58937206c70fbe24c83227946caa6ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverManager
+  infoText: {fileID: 1873067254}
 --- !u!1 &1914928344
 GameObject:
   m_ObjectHideFlags: 0
@@ -9713,7 +9732,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 593779734, guid: 6d28f55f1b0572546b2632db94416d69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10842,7 +10861,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 268699839072389607, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 671744145562011936, guid: 2a7f0c680af82e64bad82adf824553fa, type: 3}
       propertyPath: m_LocalPosition.x

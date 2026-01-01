@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Rendering; // DÝKKAT: Kütüphane deðiþti! (Eskisi: .PostProcessing idi)
+using UnityEngine.Rendering; // URP Volume sistemi için gerekli kütüphane
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject gameOverPanel;
 
     [Header("Efekt Ayarlarý")]
-    public Volume deathVolume; // DÝKKAT: Türü 'PostProcessVolume' deðil artýk 'Volume' oldu
+    public Volume deathVolume; // URP'de PostProcessVolume yerine Volume kullanýlýr
     public float effectSpeed = 0.5f;
 
     private bool isDead = false;
@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
 
-        // Volume bileþeni weight mantýðýný ayný þekilde kullanýr
+        // Oyun baþladýðýnda efektin görünmemesi için aðýrlýðý sýfýrlýyoruz
         if (deathVolume != null)
             deathVolume.weight = 0;
     }
@@ -51,12 +51,15 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         isDead = true;
-        Debug.Log("Karakter Öldü");
+        // Debug.Log("Karakter Öldü");
 
-        // Hareket scriptlerini durdurma (Senin kodundaki gibi)
+        // Karakterin hareketini durdurma
         if (GetComponent<PlayerMovement>() != null) GetComponent<PlayerMovement>().enabled = false;
+
+        // Fiziksel etkileþimleri kapatmak için (isteðe baðlý)
         if (GetComponent<Rigidbody2D>() != null) GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
 
+        // Efekti ve Game Over ekranýný baþlat
         StartCoroutine(ShowGameOverEffects());
     }
 
@@ -64,18 +67,20 @@ public class PlayerHealth : MonoBehaviour
     {
         float counter = 0f;
 
+        // Efektin yavaþça gelmesini saðlar (Volume Weight 0'dan 1'e çýkar)
         while (counter < 1f)
         {
             counter += Time.deltaTime * effectSpeed;
 
             if (deathVolume != null)
             {
-                deathVolume.weight = counter; // Kodun mantýðý ayný kalýr
+                deathVolume.weight = counter;
             }
 
             yield return null;
         }
 
+        // Efekt tamamlanýnca Game Over panelini aç
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);
