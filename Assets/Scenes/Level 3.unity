@@ -2134,6 +2134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "K\u0131r\u0131lanZemin (2)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6626617665808045140, guid: 0852fe5e3e8296a4b85cc3e9ca03f1c4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3175,7 +3179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908876070561363455, guid: ae031a683e9cd8742b83f421f785e9c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.896
+      value: 4.05
       objectReference: {fileID: 0}
     - target: {fileID: 2908876070561363455, guid: ae031a683e9cd8742b83f421f785e9c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4748,7 +4752,7 @@ Transform:
   m_GameObject: {fileID: 1319913800}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.49, y: 2.55, z: -10}
+  m_LocalPosition: {x: 56.49, y: 3.1499996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5252,7 +5256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7068657803575885018, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0345688
+      value: 1.2486174
       objectReference: {fileID: 0}
     - target: {fileID: 8135015898007994141, guid: 6b58316c1c8cca642a1e9312aa91adb0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5900,6 +5904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "K\u0131r\u0131lanZemin (1)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6626617665808045140, guid: 0852fe5e3e8296a4b85cc3e9ca03f1c4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6244,7 +6252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908876070561363455, guid: ae031a683e9cd8742b83f421f785e9c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.896
+      value: 4.05
       objectReference: {fileID: 0}
     - target: {fileID: 2908876070561363455, guid: ae031a683e9cd8742b83f421f785e9c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7226,7 +7234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908876070561363455, guid: ae031a683e9cd8742b83f421f785e9c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.896
+      value: 4.05
       objectReference: {fileID: 0}
     - target: {fileID: 2908876070561363455, guid: ae031a683e9cd8742b83f421f785e9c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7442,7 +7450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb7bcb946cfb7b469ca4620004162ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
-  sceneName: 
 --- !u!61 &1865172926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9062,6 +9069,10 @@ PrefabInstance:
     - target: {fileID: 3507083838223006456, guid: 0852fe5e3e8296a4b85cc3e9ca03f1c4, type: 3}
       propertyPath: m_Name
       value: "K\u0131r\u0131lanZemin"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626617665808045140, guid: 0852fe5e3e8296a4b85cc3e9ca03f1c4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
