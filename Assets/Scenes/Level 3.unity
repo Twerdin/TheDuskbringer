@@ -4086,7 +4086,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb7bcb946cfb7b469ca4620004162ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
+<<<<<<< Updated upstream
   sceneName: 
+=======
+>>>>>>> Stashed changes
 --- !u!61 &1865172926
 BoxCollider2D:
   m_ObjectHideFlags: 0
