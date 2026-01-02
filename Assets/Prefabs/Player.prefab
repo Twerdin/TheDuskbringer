@@ -119,11 +119,13 @@ GameObject:
   - component: {fileID: 582862792200712922}
   - component: {fileID: 5357632664553402308}
   - component: {fileID: 208182537713697486}
+  - component: {fileID: 2348919973397770953}
   - component: {fileID: 6559508639216097520}
   - component: {fileID: 1985524916051503849}
   - component: {fileID: 1390335511381623825}
-  - component: {fileID: 4331795759562283763}
   - component: {fileID: 2915250649737095126}
+  - component: {fileID: 8561172955176120065}
+  - component: {fileID: 9067950402077558353}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -195,7 +197,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 815424164945274260, guid: d0214b3b4177a79429e3ba9517ef50e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -219,7 +221,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.6223037
+  m_Mass: 0.6
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -256,6 +258,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2348919973397770953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387177322508865647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e94ae36494589a44aab33f3b6296fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 100
+  currentHealth: 100
+  healthBarImage: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  deathVolume: {fileID: 0}
+  effectSpeed: 0.5
 --- !u!114 &6559508639216097520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,24 +350,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AttackCombo
   anim: {fileID: 208182537713697486}
   comboResetTime: 0.5
---- !u!114 &4331795759562283763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3387177322508865647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e94ae36494589a44aab33f3b6296fd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 100
-  currentHealth: 0
-  healthBarImage: {fileID: 0}
-  gameOverPanel: {fileID: 0}
-  deathVolume: {fileID: 0}
-  effectSpeed: 0.5
 --- !u!114 &2915250649737095126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +365,40 @@ MonoBehaviour:
   kayganMateryal: {fileID: 6200000, guid: afb36784b366d2344b45822cb20fd040, type: 2}
   durmaMateryali: {fileID: 6200000, guid: 7c299487a5f111749bb80a8e308720ca, type: 2}
   yatayGirdiEsigi: 0.01
+--- !u!114 &8561172955176120065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387177322508865647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193cf7e7ec549ae43949742b6c611d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackCombo
+  anim: {fileID: 208182537713697486}
+  comboResetTime: 0.5
+--- !u!114 &9067950402077558353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387177322508865647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cec8bbd276ae843ae43e6247fb8174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+  attackOffset: 0.5
+  attackRange: 1
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  damageAmount: 40
+  comboResetTime: 1
+  attackRate: 1
 --- !u!1 &6991987353904041700
 GameObject:
   m_ObjectHideFlags: 0
