@@ -8,25 +8,33 @@ public class EnemyController : MonoBehaviour
     private PlayerHealth playerHealth;
     private Transform playerTarget;
 
+    [Header("Can Ayarlarý")]
+    public int maxHealth = 100;
+    private int currentHealth;
+
     [Header("Hareket Ayarlarý")]
-    public float walkSpeed = 1.5f;  // Yürüme hýzý (Yavaþ)
-    public float runSpeed = 4f;     // Koþma hýzý (Hýzlý)
+    public float walkSpeed = 1.5f;
+    public float runSpeed = 4f;
 
     [Header("Menzil & Yapay Zeka")]
-    public float detectionRange = 6f; // Oyuncuyu ne kadar uzaktan fark eder?
-    public float stopDistance = 1.2f; // Saldýrmak için ne kadar yaklaþsýn?
+    public float detectionRange = 6f;
+    public float stopDistance = 1.2f;
 
     [Header("Devriye (Patrol) Ayarlarý")]
-    public float patrolDuration = 2f; // Kaç saniye yürüsün?
-    public float idleDuration = 2f;   // Kaç saniye beklesin?
+    public float patrolDuration = 2f;
+    public float idleDuration = 2f;
     private float patrolTimer;
     private float idleTimer;
-    private bool isMovingRight = true; // Þu an ne tarafa gidiyor?
+    private bool isMovingRight = true;
 
     [Header("Saldýrý")]
     public float attackRate = 1f;
     public int damageAmount = 20;
     private float nextAttackTime = 0f;
+
+    // --- YENÝ EKLENEN KISIM: KOMBO SAYACI ---
+    private int comboStep = 0;
+    // ----------------------------------------
 
     private bool isDead = false;
 
@@ -35,7 +43,8 @@ public class EnemyController : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        // Zamanlayýcýlarý sýfýrla
+        currentHealth = maxHealth;
+
         patrolTimer = patrolDuration;
         idleTimer = idleDuration;
 
@@ -51,40 +60,34 @@ public class EnemyController : MonoBehaviour
     {
         if (isDead) return;
 
-        // Oyuncu ile aradaki mesafeyi ölç
-        float distanceToPlayer = Vector2.Distance(transform.position, playerTarget.position);
+        // Player var mý yok mu kontrol et (Hata almamak için)
+        if (playerTarget == null) return;
 
-        // --- DURUM MAKÝNESÝ (STATE MACHINE) ---
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTarget.position);
 
         if (distanceToPlayer < detectionRange)
         {
-            // DURUM 1: OYUNCUYU GÖRDÜ (KOVALAMA & SALDIRI)
             EngagePlayer(distanceToPlayer);
         }
         else
         {
-            // DURUM 2: OYUNCU UZAKTA (DEVRÝYE GEZ)
             PatrolRoutine();
         }
     }
 
-    // --- DEVRÝYE MODU (Sakin Yürüme) ---
+    // --- DEVRÝYE MODU ---
     void PatrolRoutine()
     {
-        // Önce koþmayý kapat
         anim.SetBool("isRunning", false);
-        anim.SetBool("isRunning", false); // Büyük/küçük harf hatasý ihtimaline karþý ikisi de
 
-        // Bekleme Süresi (Idle)
         if (idleTimer > 0)
         {
             idleTimer -= Time.deltaTime;
             StopMovement();
             anim.SetBool("isWalking", false);
-            return; // Bekliyorsa aþaðýya inme
+            return;
         }
 
-        // Yürüme Süresi
         if (patrolTimer > 0)
         {
             patrolTimer -= Time.deltaTime;
@@ -93,10 +96,9 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            // Yürüme bitti, tekrar bekleme moduna geç ve yön deðiþtir
             idleTimer = idleDuration;
             patrolTimer = patrolDuration;
-            FlipDirection(); // Yönü tersine çevir
+            FlipDirection();
         }
     }
 
@@ -104,8 +106,6 @@ public class EnemyController : MonoBehaviour
     {
         float dir = isMovingRight ? 1 : -1;
         rb.linearVelocity = new Vector2(dir * walkSpeed, rb.linearVelocity.y);
-
-        // Yüzünü gittiði yöne dön
         transform.localScale = new Vector3(dir, 1, 1);
     }
 
@@ -114,19 +114,17 @@ public class EnemyController : MonoBehaviour
         isMovingRight = !isMovingRight;
     }
 
-    // --- SAVAÞ MODU (Koþma & Saldýrý) ---
+    // --- SAVAÞ MODU ---
     void EngagePlayer(float distance)
     {
-        // Devriye modunu kapat
         anim.SetBool("isWalking", false);
 
         if (distance > stopDistance)
         {
-            // Oyuncuya doðru KOÞ
             Vector2 direction = (playerTarget.position - transform.position).normalized;
             rb.linearVelocity = new Vector2(direction.x * runSpeed, rb.linearVelocity.y);
 
-            // Yüzünü oyuncuya dön
+            // Düþmanýn yönünü oyuncuya çevir
             if (direction.x > 0) transform.localScale = new Vector3(1, 1, 1);
             else if (direction.x < 0) transform.localScale = new Vector3(-1, 1, 1);
 
@@ -134,7 +132,6 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            // Çok yakýn, DUR ve SALDIR
             StopMovement();
             anim.SetBool("isRunning", false);
 
@@ -151,27 +148,64 @@ public class EnemyController : MonoBehaviour
         rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
     }
 
+    // --- YENÝLENMÝÞ SALDIRI FONKSÝYONU ---
     void Attack()
     {
-        anim.SetTrigger("Attack");
-        if (playerHealth != null) playerHealth.TakeDamage(damageAmount);
+        // 1. Sayacý artýr (1, 2, 3...)
+        comboStep++;
+
+        // 2. Eðer 3'ü geçtiyse baþa sar (1 yap)
+        if (comboStep > 3)
+        {
+            comboStep = 1;
+        }
+
+        // 3. Animator'a hangi sýrada olduðumuzu bildir (AttackInt)
+        anim.SetInteger("AttackInt", comboStep);
+
+        // 4. Saldýrýyý tetikle (AttackTrig)
+        anim.SetTrigger("AttackTrigger");
+
+        // 5. Oyuncuya hasar ver
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(damageAmount);
+        }
+    }
+
+    // --- HASAR ALMA VE ÖLÜM ---
+    public void TakeDamage(int damage)
+    {
+        if (isDead) return;
+
+        currentHealth -= damage;
+
+        // Hasar animasyonunu tetikle
+        anim.SetTrigger("Hurt");
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     public void Die()
     {
+        if (isDead) return;
+
         isDead = true;
-        anim.SetBool("IsDead", true);
+        Debug.Log("Düþman Öldü!");
+
+        anim.SetBool("IsDead", true); // "IsDead" parametresinin Animator'da olduðundan emin ol (yoksa hata verir)
+
+        // Diðer animasyon parametrelerini temizle
         anim.SetBool("isRunning", false);
         anim.SetBool("isWalking", false);
+
         rb.linearVelocity = Vector2.zero;
         GetComponent<Collider2D>().enabled = false;
         rb.bodyType = RigidbodyType2D.Kinematic;
-        this.enabled = false;
-    }
 
-    public void TakeDamage()
-    {
-        if (isDead) return;
-        anim.SetTrigger("Hurt");
+        this.enabled = false;
     }
 }
