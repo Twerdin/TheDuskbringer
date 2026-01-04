@@ -2,42 +2,73 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    [Header("Saldýrý Ayarlarý")]
-    public float attackOffset = 1.0f; // Karakterin ne kadar ÖNÜNE vursun?
-    public float attackRange = 0.8f;  // Vuruþ dairesinin büyüklüðü
-    public LayerMask enemyLayers;     // Düþman katmaný
-    public int damageAmount = 20;     // Hasar miktarý
-
-    [Header("Kombo Ayarlarý")]
-    public float comboResetTime = 1.0f;
-    private int comboStep = 0;
-    private float comboTimer = 0f;
-
-    [Header("Bileþenler")]
+    [Header("Gerekli Bileþenler")]
+    public PlayerMovement playerController;
     private Animator anim;
 
-    private float nextAttackTime = 0f;
+    [Header("Saldýrý Ayarlarý")]
     public float attackRate = 2f;
+    private float nextAttackTime = 0f;
+
+    [Header("Yer Saldýrýsý (J Tuþu)")]
+    public float groundAttackOffset = 1.0f;
+    public float groundAttackRange = 0.8f;
+    public int groundDamage = 20;
+    public float comboResetTime = 1.0f;
+
+    [Header("Özel / Hava Saldýrýsý (Q Tuþu)")]
+    public KeyCode airAttackInput = KeyCode.Q;
+
+    // --- BURASI YENÝLENDÝ: ÝSMÝ SEN SEÇECEKSÝN ---
+    [Tooltip("Animator'daki Trigger parametresinin tam adýný buraya yaz.")]
+    public string specialAttackAnimName = "Special_Attack";
+    // ---------------------------------------------
+
+    public float airAttackOffset = 0.8f;
+    public float airAttackRange = 1.2f;
+    public int airAttackDamage = 25;
+
+    [Header("Genel")]
+    public LayerMask enemyLayers;
+
+    private int comboStep = 0;
+    private float comboTimer = 0f;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        if (playerController == null)
+            playerController = GetComponent<PlayerMovement>();
     }
 
     void Update()
     {
-        // Kombo Sayacý
         if (comboStep > 0)
         {
             comboTimer += Time.deltaTime;
             if (comboTimer >= comboResetTime) ResetCombo();
         }
 
-        // Saldýrý Tuþu
-        if (Time.time >= nextAttackTime && Input.GetKeyDown(KeyCode.J))
+        if (Time.time >= nextAttackTime)
         {
-            PerformComboAttack();
-            nextAttackTime = Time.time + 1f / attackRate;
+            // --- HAVA / ÖZEL SALDIRI (Q) ---
+            if (playerController.isGrounded == false)
+            {
+                if (Input.GetKeyDown(airAttackInput))
+                {
+                    PerformSpecialAttack(); // Ýsmi deðiþtirdik
+                    nextAttackTime = Time.time + 1f / attackRate;
+                }
+            }
+            // --- YER SALDIRISI (J) ---
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.J))
+                {
+                    PerformComboAttack();
+                    nextAttackTime = Time.time + 1f / attackRate;
+                }
+            }
         }
     }
 
@@ -50,33 +81,32 @@ public class PlayerCombat : MonoBehaviour
         else if (comboStep == 2) anim.SetTrigger("Attack2");
         else if (comboStep == 3) anim.SetTrigger("Attack3");
 
-        DealDamage(); // Hasar Ver
+        DealDamage(groundDamage, groundAttackRange, groundAttackOffset);
 
         if (comboStep >= 3) comboStep = 0;
     }
 
-    void DealDamage()
+    // --- ÖZEL SALDIRI FONKSÝYONU ---
+    void PerformSpecialAttack()
     {
-        // --- MATEMATÝKSEL HESAPLAMA ---
-        // 1. Karakterin yönünü bul (Scale X 1 ise sað, -1 ise sol)
+        // ARTIK SENÝN YAZDIÐIN ÝSMÝ KULLANIYOR
+        anim.SetTrigger(specialAttackAnimName);
+
+        // Mavi menzili kullan
+        DealDamage(airAttackDamage, airAttackRange, airAttackOffset);
+    }
+
+    void DealDamage(int dmg, float range, float offset)
+    {
         float direction = Mathf.Sign(transform.localScale.x);
+        Vector2 hitPos = new Vector2(transform.position.x + (direction * offset), transform.position.y);
 
-        // 2. Vuruþ noktasýný hesapla (Karakterin merkezi + (Yön * Mesafe))
-        Vector2 hitPos = new Vector2(
-            transform.position.x + (direction * attackOffset),
-            transform.position.y
-        );
-
-        // 3. O noktada düþman var mý diye bak
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitPos, attackRange, enemyLayers);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(hitPos, range, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
-            if (enemyHealth != null)
-            {
-                enemyHealth.TakeDamage(damageAmount);
-            }
+            EnemyController enemyScript = enemy.GetComponent<EnemyController>();
+            if (enemyScript != null) enemyScript.TakeDamage(dmg);
         }
     }
 
@@ -86,17 +116,14 @@ public class PlayerCombat : MonoBehaviour
         comboTimer = 0f;
     }
 
-    // Editörde Kýrmýzý Daireyi Görmek Ýçin
     void OnDrawGizmosSelected()
     {
-        // Oyun çalýþmýyorken bile yönü tahmin etmeye çalýþýr
         float direction = Mathf.Sign(transform.localScale.x);
-        Vector2 hitPos = new Vector2(
-            transform.position.x + (direction * attackOffset),
-            transform.position.y
-        );
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(hitPos, attackRange);
+        Gizmos.DrawWireSphere(new Vector2(transform.position.x + (direction * groundAttackOffset), transform.position.y), groundAttackRange);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(new Vector2(transform.position.x + (direction * airAttackOffset), transform.position.y), airAttackRange);
     }
 }

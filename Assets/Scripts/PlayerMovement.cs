@@ -10,7 +10,11 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
-    private bool isGrounded = false;
+    // --- KRÝTÝK DEÐÝÞÝKLÝK BURADA ---
+    // Bunu "public" yaptýk ki PlayerCombat scripti "Havadayýz!" diye görebilsin.
+    public bool isGrounded = false;
+    // --------------------------------
+
     private bool isJumping = false;
 
     void Start()
@@ -25,28 +29,24 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
 
-
         anim.SetBool("IsGrounded", isGrounded);
-        anim.SetBool("isJumping", isJumping); 
-        
+        anim.SetBool("isJumping", isJumping);
     }
 
     void Move()
     {
         float move = Input.GetAxisRaw("Horizontal");
+        // Unity 6 kullanýyorsan linearVelocity, eskiyse velocity kullan.
         rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
-
 
         if (move > 0) sr.flipX = false;
         if (move < 0) sr.flipX = true;
-
 
         anim.SetBool("isRunning", move != 0);
     }
 
     void Jump()
     {
-
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
             isJumping = true;
             isGrounded = false;
         }
-
 
         if (isGrounded)
         {
@@ -78,4 +77,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-

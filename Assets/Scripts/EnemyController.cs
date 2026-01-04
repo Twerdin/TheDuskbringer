@@ -16,6 +16,10 @@ public class EnemyController : MonoBehaviour
     public float walkSpeed = 1.5f;
     public float runSpeed = 4f;
 
+    [Header("Görsel Ayarlar (ÖNEMLÝ)")]
+    // Eðer karakterin çizimi doðuþtan SOLA bakýyorsa bunu iþaretle!
+    public bool spriteFaceLeft = false;
+
     [Header("Menzil & Yapay Zeka")]
     public float detectionRange = 6f;
     public float stopDistance = 1.2f;
@@ -32,10 +36,22 @@ public class EnemyController : MonoBehaviour
     public int damageAmount = 20;
     private float nextAttackTime = 0f;
 
-    // --- YENÝ EKLENEN KISIM: KOMBO SAYACI ---
+    [Tooltip("Kaç tane saldýrý animasyonun var? (Örn: 2 ise 1-2-1-2 yapar)")]
+    public int maxComboCount = 2;
     private int comboStep = 0;
-    // ----------------------------------------
 
+    // --- ANIMASYON ÝSÝMLERÝ (Inspector'dan Ayarlanabilir) ---
+    [Header("Animasyon Ýsim Ayarlarý")]
+    public string walkAnimName = "isWalking";
+    public string runAnimName = "isRunning";
+    public string attackTriggerName = "AttackTrigger"; // Trigger adý
+    public string attackIntName = "AttackInt";         // Integer (Sayý) adý
+    public string hurtTriggerName = "Hurt";
+    public string deadBoolName = "IsDead";
+    // ---------------------------------------------------------
+    [Header("Ölüm Ayarlarý")]
+    // Karakter ölünce ne kadar aþaðý/yukarý kaysýn? (Eksi deðer aþaðý indirir)
+    public float deathYOffset = -0.15f;
     private bool isDead = false;
 
     void Start()
@@ -48,6 +64,7 @@ public class EnemyController : MonoBehaviour
         patrolTimer = patrolDuration;
         idleTimer = idleDuration;
 
+        // Oyuncuyu Bul
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
@@ -60,7 +77,7 @@ public class EnemyController : MonoBehaviour
     {
         if (isDead) return;
 
-        // Player var mý yok mu kontrol et (Hata almamak için)
+        // Player yoksa hata verme, sadece bekle
         if (playerTarget == null) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, playerTarget.position);
@@ -78,13 +95,13 @@ public class EnemyController : MonoBehaviour
     // --- DEVRÝYE MODU ---
     void PatrolRoutine()
     {
-        anim.SetBool("isRunning", false);
+        anim.SetBool(runAnimName, false);
 
         if (idleTimer > 0)
         {
             idleTimer -= Time.deltaTime;
             StopMovement();
-            anim.SetBool("isWalking", false);
+            anim.SetBool(walkAnimName, false);
             return;
         }
 
@@ -92,7 +109,7 @@ public class EnemyController : MonoBehaviour
         {
             patrolTimer -= Time.deltaTime;
             MovePatrol();
-            anim.SetBool("isWalking", true);
+            anim.SetBool(walkAnimName, true);
         }
         else
         {
@@ -105,8 +122,12 @@ public class EnemyController : MonoBehaviour
     void MovePatrol()
     {
         float dir = isMovingRight ? 1 : -1;
+        // Not: Unity 6 kullanýyorsan linearVelocity, eskiyse velocity kullan.
         rb.linearVelocity = new Vector2(dir * walkSpeed, rb.linearVelocity.y);
-        transform.localScale = new Vector3(dir, 1, 1);
+
+        // --- TERS SPRITE DÜZELTME MANTIÐI ---
+        float scaleMultiplier = spriteFaceLeft ? -1 : 1;
+        transform.localScale = new Vector3(dir * scaleMultiplier, 1, 1);
     }
 
     void FlipDirection()
@@ -114,26 +135,31 @@ public class EnemyController : MonoBehaviour
         isMovingRight = !isMovingRight;
     }
 
-    // --- SAVAÞ MODU ---
+    // --- SAVAÞ MODU (PLAYER KOVALAMA) ---
     void EngagePlayer(float distance)
     {
-        anim.SetBool("isWalking", false);
+        anim.SetBool(walkAnimName, false);
 
         if (distance > stopDistance)
         {
             Vector2 direction = (playerTarget.position - transform.position).normalized;
             rb.linearVelocity = new Vector2(direction.x * runSpeed, rb.linearVelocity.y);
 
-            // Düþmanýn yönünü oyuncuya çevir
-            if (direction.x > 0) transform.localScale = new Vector3(1, 1, 1);
-            else if (direction.x < 0) transform.localScale = new Vector3(-1, 1, 1);
+            // --- YÖN ÇEVÝRME (TERS SPRITE DESTEKLÝ) ---
+            float scaleMultiplier = spriteFaceLeft ? -1 : 1;
 
-            anim.SetBool("isRunning", true);
+            if (direction.x > 0)
+                transform.localScale = new Vector3(1 * scaleMultiplier, 1, 1);
+            else if (direction.x < 0)
+                transform.localScale = new Vector3(-1 * scaleMultiplier, 1, 1);
+            // ------------------------------------------
+
+            anim.SetBool(runAnimName, true);
         }
         else
         {
             StopMovement();
-            anim.SetBool("isRunning", false);
+            anim.SetBool(runAnimName, false);
 
             if (Time.time >= nextAttackTime)
             {
@@ -148,25 +174,21 @@ public class EnemyController : MonoBehaviour
         rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
     }
 
-    // --- YENÝLENMÝÞ SALDIRI FONKSÝYONU ---
+    // --- SALDIRI SÝSTEMÝ ---
     void Attack()
     {
-        // 1. Sayacý artýr (1, 2, 3...)
         comboStep++;
 
-        // 2. Eðer 3'ü geçtiyse baþa sar (1 yap)
-        if (comboStep > 3)
+        // Belirlenen kombo sýnýrýný geçerse 1'e dön
+        if (comboStep > maxComboCount)
         {
             comboStep = 1;
         }
 
-        // 3. Animator'a hangi sýrada olduðumuzu bildir (AttackInt)
-        anim.SetInteger("AttackInt", comboStep);
+        // Animasyon parametre isimlerini deðiþkenden al
+        anim.SetInteger(attackIntName, comboStep);
+        anim.SetTrigger(attackTriggerName);
 
-        // 4. Saldýrýyý tetikle (AttackTrig)
-        anim.SetTrigger("AttackTrigger");
-
-        // 5. Oyuncuya hasar ver
         if (playerHealth != null)
         {
             playerHealth.TakeDamage(damageAmount);
@@ -179,9 +201,7 @@ public class EnemyController : MonoBehaviour
         if (isDead) return;
 
         currentHealth -= damage;
-
-        // Hasar animasyonunu tetikle
-        anim.SetTrigger("Hurt");
+        anim.SetTrigger(hurtTriggerName);
 
         if (currentHealth <= 0)
         {
@@ -196,15 +216,23 @@ public class EnemyController : MonoBehaviour
         isDead = true;
         Debug.Log("Düþman Öldü!");
 
-        anim.SetBool("IsDead", true); // "IsDead" parametresinin Animator'da olduðundan emin ol (yoksa hata verir)
+        anim.SetBool(deadBoolName, true);
+        anim.SetBool(runAnimName, false);
+        anim.SetBool(walkAnimName, false);
 
-        // Diðer animasyon parametrelerini temizle
-        anim.SetBool("isRunning", false);
-        anim.SetBool("isWalking", false);
-
+        // Fiziði ve Çarpýþmayý Kapat
         rb.linearVelocity = Vector2.zero;
-        GetComponent<Collider2D>().enabled = false;
         rb.bodyType = RigidbodyType2D.Kinematic;
+        GetComponent<Collider2D>().enabled = false;
+
+        // --- YENÝ KISIM: INSPECTOR'DAN AYARLANAN DEÐERÝ KULLAN ---
+        // Mevcut Y pozisyonuna senin belirlediðin (deathYOffset) deðeri ekler.
+        transform.position = new Vector3(
+            transform.position.x,
+            transform.position.y + deathYOffset,
+            transform.position.z
+        );
+        // ----------------------------------------------------------
 
         this.enabled = false;
     }
