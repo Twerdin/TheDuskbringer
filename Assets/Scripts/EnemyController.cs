@@ -165,8 +165,11 @@ public class EnemyController : MonoBehaviour
 
         // 4. Saldýrýyý tetikle (AttackTrig)
         anim.SetTrigger("AttackTrigger");
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
         // 5. Oyuncuya hasar ver
         if (playerHealth != null)
         {
