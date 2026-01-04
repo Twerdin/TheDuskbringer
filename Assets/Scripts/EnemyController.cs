@@ -166,6 +166,7 @@ public class EnemyController : MonoBehaviour
         // 4. Saldýrýyý tetikle (AttackTrig)
         anim.SetTrigger("AttackTrigger");
 
+
         // 5. Oyuncuya hasar ver
         if (playerHealth != null)
         {
