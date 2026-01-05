@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
-    // SpriteRenderer'a artık yön çevirmek için ihtiyacımız yok, o yüzden sildim.
+    // SpriteRenderer'a artÃ½k yÃ¶n Ã§evirmek iÃ§in ihtiyacÃ½mÃ½z yok, o yÃ¼zden sildim.
 
     [Header("Durumlar")]
     public bool isGrounded = false;
@@ -27,9 +27,11 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
 
-        // Animasyon parametrelerini güncelle
+        // Animasyon parametrelerini gÃ¼ncelle
         anim.SetBool("IsGrounded", isGrounded);
+
         anim.SetBool("isJumping", isJumping);
+
     }
 
     void Move()
@@ -39,14 +41,14 @@ public class PlayerMovement : MonoBehaviour
         // Unity 6: linearVelocity, Eski: velocity
         rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
 
-        // --- EN BAŞTAKİ HALİ (Sadece Resim Döner) ---
+        // --- EN BAÃTAKÃ HALÃ (Sadece Resim DÃ¶ner) ---
         if (move > 0)
         {
-            sr.flipX = false; // Sağa bak (Resmi düzelt)
+            sr.flipX = false; // SaÃ°a bak (Resmi dÃ¼zelt)
         }
         else if (move < 0)
         {
-            sr.flipX = true; // Sola bak (Resmi ters çevir)
+            sr.flipX = true; // Sola bak (Resmi ters Ã§evir)
         }
 
         anim.SetBool("isRunning", move != 0);
