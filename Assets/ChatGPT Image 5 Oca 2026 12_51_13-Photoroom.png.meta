@@ -1,10 +1,19 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/ChatGPT Image 5 Oca 2026 12_51_13-Photoroom.png.meta
 guid: ff9534d45881cb843b0d693cd133e8dc
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -6779336616939184461
     second: ChatGPT Image 5 Oca 2026 12_51_13-Photoroom_0
+========
+guid: 3d6c4afcb96c2a442bee8b58e2e074e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4346244404228752641
+    second: Arrow_0
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/Arrow.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/ChatGPT Image 5 Oca 2026 12_51_13-Photoroom.png.meta
       name: ChatGPT Image 5 Oca 2026 12_51_13-Photoroom_0
+========
+      name: Arrow_0
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/Arrow.png.meta
       rect:
         serializedVersion: 2
         x: 0
         y: 0
+<<<<<<<< HEAD:Assets/ChatGPT Image 5 Oca 2026 12_51_13-Photoroom.png.meta
         width: 1280
         height: 853
+========
+        width: 29
+        height: 3
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/Arrow.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +133,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Assets/ChatGPT Image 5 Oca 2026 12_51_13-Photoroom.png.meta
       spriteID: 3be9a8ee345fae1a0800000000000000
       internalID: -6779336616939184461
+========
+      spriteID: ffa7ae2edb90fa3c0800000000000000
+      internalID: -4346244404228752641
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/Arrow.png.meta
       vertices: []
       indices: 
       edges: []
@@ -135,7 +158,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/ChatGPT Image 5 Oca 2026 12_51_13-Photoroom.png.meta
       ChatGPT Image 5 Oca 2026 12_51_13-Photoroom_0: -6779336616939184461
+========
+      Arrow_0: -4346244404228752641
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Arrow Trap/PNGs/Arrow.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

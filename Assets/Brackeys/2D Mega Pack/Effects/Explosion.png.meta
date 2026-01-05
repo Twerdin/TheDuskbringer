@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Explosion.png.meta
 guid: 947c0cbf176869a45b7fd547776a2b0c
 AssetOrigin:
   serializedVersion: 1
@@ -24,6 +25,23 @@ TextureImporter:
   - first:
       213: 21300008
     second: Explosion_4
+========
+guid: 7bb37cfe1a3a9ab4a930cb7178645844
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5217671297236562399
+    second: Fire Trap - Level 1_0
+  - first:
+      213: -6154617364274131190
+    second: Fire Trap - Level 1_1
+  - first:
+      213: 1221848524344335182
+    second: Fire Trap - Level 1_2
+  - first:
+      213: 9035281779509367266
+    second: Fire Trap - Level 1_3
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 1.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -56,7 +74,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Explosion.png.meta
     filterMode: 0
+========
+    filterMode: 1
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 1.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -85,9 +107,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -119,6 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Explosion.png.meta
       name: Explosion_0
       rect:
         serializedVersion: 2
@@ -192,6 +215,15 @@ TextureImporter:
         y: 0
         width: 15
         height: 16
+========
+      name: Fire Trap - Level 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 139
+        height: 32
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 1.png.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +232,79 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Explosion.png.meta
       spriteID: 43ddcb3144fae034eb7f946f3f5cbab3
       internalID: 21300006
+========
+      spriteID: fd179828664e86840800000000000000
+      internalID: 5217671297236562399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 1_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f4df1ad18669aa0800000000000000
+      internalID: -6154617364274131190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 1_2
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b11ee52c0e4f010800000000000000
+      internalID: 1221848524344335182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 1_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1173158e4c36d70800000000000000
+      internalID: 9035281779509367266
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 1.png.meta
       vertices: []
       indices: 
       edges: []
@@ -220,10 +323,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Explosion.png.meta
       Explosion_0: 21300000
       Explosion_1: 21300002
       Explosion_2: 21300004
       Explosion_3: 21300006
+========
+      Fire Trap - Level 1_0: 5217671297236562399
+      Fire Trap - Level 1_1: -6154617364274131190
+      Fire Trap - Level 1_2: 1221848524344335182
+      Fire Trap - Level 1_3: 9035281779509367266
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 1.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
