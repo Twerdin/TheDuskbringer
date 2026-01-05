@@ -1,0 +1,913 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+guid: 28e59be2d833c9446b4267c6da5d4bf1
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177430
+  packageName: Free 2D Mega Pack
+  packageVersion: 1.0
+  assetPath: Assets/Brackeys/2D Mega Pack/Characters/Detective.png
+  uploadId: 386437
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Detective_0
+  - first:
+      213: 21300002
+    second: Detective_1
+  - first:
+      213: 21300004
+    second: Detective_2
+  - first:
+      213: 21300006
+    second: Detective_3
+  - first:
+      213: 21300008
+    second: Detective_4
+  - first:
+      213: 21300010
+    second: Detective_5
+  - first:
+      213: 21300012
+    second: Detective_6
+  - first:
+      213: 21300014
+    second: Detective_7
+  - first:
+      213: 21300016
+    second: Detective_Skeleton_0
+  - first:
+      213: 21300018
+    second: Detective_Skeleton_1
+  - first:
+      213: 21300020
+    second: Detective_Skeleton_2
+  - first:
+      213: 21300022
+    second: Detective_Skeleton_3
+  - first:
+      213: 21300024
+    second: Detective_Skeleton_4
+  - first:
+      213: 21300026
+    second: Detective_Skeleton_5
+  - first:
+      213: 21300028
+    second: Detective_Skeleton_6
+  - first:
+      213: 21300030
+    second: Detective_Skeleton_7
+========
+guid: b496c684886eea340832d0992eeea8da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8916027226900198512
+    second: Fire Trap - Level 2_0
+  - first:
+      213: 868099224779372193
+    second: Fire Trap - Level 2_1
+  - first:
+      213: -5587472448636572643
+    second: Fire Trap - Level 2_2
+  - first:
+      213: -645124315933402582
+    second: Fire Trap - Level 2_3
+  - first:
+      213: 383114150178742059
+    second: Fire Trap - Level 2_4
+  - first:
+      213: -6949860416723368974
+    second: Fire Trap - Level 2_5
+  - first:
+      213: 1848820288417759169
+    second: Fire Trap - Level 2_6
+  - first:
+      213: -6040788125211470463
+    second: Fire Trap - Level 2_7
+  - first:
+      213: 1373783504381292886
+    second: Fire Trap - Level 2_8
+  - first:
+      213: 5912526033678768656
+    second: Fire Trap - Level 2_9
+  - first:
+      213: -2579352471090023489
+    second: Fire Trap - Level 2_10
+  - first:
+      213: 1842377663075723923
+    second: Fire Trap - Level 2_11
+  - first:
+      213: 2595104471307327171
+    second: Fire Trap - Level 2_12
+  - first:
+      213: 518860362554975946
+    second: Fire Trap - Level 2_13
+  - first:
+      213: 2740144098763119937
+    second: Fire Trap - Level 2_14
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+    filterMode: 0
+========
+    filterMode: 1
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      name: Detective_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 86
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34314a06bce7074dad1db9961943f3b
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 86
+        width: 10
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefad6c7fd49b204e8859485b48ac107
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 86
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c87747e421eb34896a1c09db314349
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 86
+        width: 10
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b2e5b3ab2dbee4fa3dc27be12c4940
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 86
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cb4968d80ca47448b24071003a604a
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 70
+        width: 10
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2a2c312248a8548adf887dbf38482e
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 70
+        width: 10
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28132130f1b4c8c4bb464479c49fdc0a
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 70
+        width: 10
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922472b3e210fd9478b73917b26b0eef
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_Skeleton_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 40
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9cb6b4762e9084cbc3454daca8880f
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_Skeleton_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 40
+        width: 10
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061c7fc6e21758c47a732d870987d3d9
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detective_Skeleton_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 40
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: Fire Trap - Level 2_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      spriteID: c718bb62a8a0ecc419cfeeef8920acae
+      internalID: 21300020
+========
+      spriteID: 074f81316871cbb70800000000000000
+      internalID: 8916027226900198512
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      name: Detective_Skeleton_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 40
+        width: 10
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: Fire Trap - Level 2_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 13
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      spriteID: 30a127fd9dbcfe34bac6e39f71475aaa
+      internalID: 21300022
+========
+      spriteID: 1a634c245ab1c0c00800000000000000
+      internalID: 868099224779372193
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      name: Detective_Skeleton_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 40
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: Fire Trap - Level 2_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 12
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      spriteID: 2f4ddbfca1386bf49bfde1e00f8447d1
+      internalID: 21300024
+========
+      spriteID: d1c2cb2696f4572b0800000000000000
+      internalID: -5587472448636572643
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      name: Detective_Skeleton_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 24
+        width: 10
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: Fire Trap - Level 2_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 19
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      spriteID: c3393dfe161c9db4ea4664eaae743b6e
+      internalID: 21300026
+========
+      spriteID: a2a92d84ade0c07f0800000000000000
+      internalID: -645124315933402582
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      name: Detective_Skeleton_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 24
+        width: 10
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: Fire Trap - Level 2_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 19
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      spriteID: 9dd3737632c146147bd14bbe5ebf64ce
+      internalID: 21300028
+========
+      spriteID: b2f54dd2a48115500800000000000000
+      internalID: 383114150178742059
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      name: Detective_Skeleton_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 24
+        width: 10
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: Fire Trap - Level 2_5
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 23
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      spriteID: f31eb533cc3894d41a2eefe313ea43a8
+      internalID: 21300030
+========
+      spriteID: 2f3c7aed5c22d8f90800000000000000
+      internalID: -6949860416723368974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 23
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cffca0c14458a910800000000000000
+      internalID: 1848820288417759169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1855f51a43fca2ca0800000000000000
+      internalID: -6040788125211470463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65130f091d8a01310800000000000000
+      internalID: 1373783504381292886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a1caa0a138d0250800000000000000
+      internalID: 5912526033678768656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb33722f79c443cd0800000000000000
+      internalID: -2579352471090023489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_11
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a2eb529b0719910800000000000000
+      internalID: 1842377663075723923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c61d4764c9a30420800000000000000
+      internalID: 2595104471307327171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_13
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6ae1e20cc533700800000000000000
+      internalID: 518860362554975946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire Trap - Level 2_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d98283a82f60620800000000000000
+      internalID: 2740144098763119937
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 59431fe1182845846877094d071e26da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Detective.png.meta
+      Detective_0: 21300000
+      Detective_1: 21300002
+      Detective_2: 21300004
+      Detective_3: 21300006
+      Detective_4: 21300008
+      Detective_5: 21300010
+      Detective_6: 21300012
+      Detective_7: 21300014
+      Detective_Skeleton_0: 21300016
+      Detective_Skeleton_1: 21300018
+      Detective_Skeleton_2: 21300020
+      Detective_Skeleton_3: 21300022
+      Detective_Skeleton_4: 21300024
+      Detective_Skeleton_5: 21300026
+      Detective_Skeleton_6: 21300028
+      Detective_Skeleton_7: 21300030
+========
+      Fire Trap - Level 2_0: 8916027226900198512
+      Fire Trap - Level 2_1: 868099224779372193
+      Fire Trap - Level 2_10: -2579352471090023489
+      Fire Trap - Level 2_11: 1842377663075723923
+      Fire Trap - Level 2_12: 2595104471307327171
+      Fire Trap - Level 2_13: 518860362554975946
+      Fire Trap - Level 2_14: 2740144098763119937
+      Fire Trap - Level 2_2: -5587472448636572643
+      Fire Trap - Level 2_3: -645124315933402582
+      Fire Trap - Level 2_4: 383114150178742059
+      Fire Trap - Level 2_5: -6949860416723368974
+      Fire Trap - Level 2_6: 1848820288417759169
+      Fire Trap - Level 2_7: -6040788125211470463
+      Fire Trap - Level 2_8: 1373783504381292886
+      Fire Trap - Level 2_9: 5912526033678768656
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/PNGs/Fire Trap - Level 2.png.meta
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,27 +3,40 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     private float length, startpos;
-    public GameObject cam;          // Ana Kamerayı buraya sürükleyeceğiz
-    public float parallaxEffect;    // 0 = Hareket etmez, 1 = Kamera ile birebir gider (Tam arkaplan), 0.5 = Yarım hız
+    public GameObject cam;
+    
+    [Header("Parallax AyarlarÄ±")]
+    [Tooltip("1 = Arkaplan hiÃ§ kÄ±mÄ±ldamaz (GÃ¶kyÃ¼zÃ¼), 0 = Karakterle aynÄ± hÄ±zda gider")]
+    public float parallaxEffect; 
+
+    [Tooltip("Bu katman sonsuza kadar kendini tekrar etsin mi?")]
+    public bool isInfinite; 
 
     void Start()
     {
         startpos = transform.position.x;
-        // Görselin genişliğini otomatik alır
+        
+        // Sprite'Ä±n uzunluÄŸunu otomatik alÄ±yoruz
         length = GetComponent<SpriteRenderer>().bounds.size.x;
+
+        if (cam == null)
+            cam = Camera.main.gameObject;
     }
 
-    void Update()
+    void LateUpdate() // Kamera takibi iÃ§in LateUpdate en iyisidir, titremeyi Ã¶nler
     {
-        // Kameranın ne kadar ilerlediğini hesapla (Parallax efekti için)
+        // KameranÄ±n ne kadar hareket ettiÄŸine gÃ¶re 'sanal' pozisyon (temp) ve 'gerÃ§ek' hareket (dist)
         float temp = (cam.transform.position.x * (1 - parallaxEffect));
         float dist = (cam.transform.position.x * parallaxEffect);
 
-        // Arka planı yeni pozisyonuna taşı
+        // Objeyi yeni pozisyona taÅŸÄ± (Y pozisyonunu koruyarak)
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
 
-        // Sonsuz döngü mantığı: Eğer kamera görselin sınırını aştıysa, görseli ileri/geri ışınla
-        if (temp > startpos + length) startpos += length;
-        else if (temp < startpos - length) startpos -= length;
+        // EÄŸer sonsuz dÃ¶ngÃ¼ aÃ§Ä±ksa resim bittiÄŸinde baÅŸa sar
+        if (isInfinite)
+        {
+            if (temp > startpos + length) startpos += length;
+            else if (temp < startpos - length) startpos -= length;
+        }
     }
 }
