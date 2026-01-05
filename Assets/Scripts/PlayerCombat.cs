@@ -10,23 +10,22 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate = 2f;
     private float nextAttackTime = 0f;
 
+    [Header("Skill Kilidi (YENÝ EKLENEN KISIM)")]
+    // Hata veren deðiþken buydu. Artýk burada tanýmlý.
+    public bool isSpecialAttackUnlocked = false;
+
     [Header("Yer Saldýrýsý (J Tuþu)")]
     public float groundAttackOffset = 1.0f;
     public float groundAttackRange = 0.8f;
     public int groundDamage = 20;
     public float comboResetTime = 1.0f;
 
-    [Header("Özel / Hava Saldýrýsý (Q Tuþu)")]
-    public KeyCode airAttackInput = KeyCode.Q;
-
-    // --- BURASI YENÝLENDÝ: ÝSMÝ SEN SEÇECEKSÝN ---
-    [Tooltip("Animator'daki Trigger parametresinin tam adýný buraya yaz.")]
-    public string specialAttackAnimName = "Special_Attack";
-    // ---------------------------------------------
-
-    public float airAttackOffset = 0.8f;
-    public float airAttackRange = 1.2f;
-    public int airAttackDamage = 25;
+    [Header("Özel Saldýrý (Q Tuþu)")]
+    public KeyCode specialAttackInput = KeyCode.Q;
+    public string specialAttackAnimName = "Special_Attack"; // Animator ismin neyse onu yaz
+    public float specialAttackOffset = 0.8f;
+    public float specialAttackRange = 1.2f;
+    public int specialAttackDamage = 25;
 
     [Header("Genel")]
     public LayerMask enemyLayers;
@@ -43,31 +42,30 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
+        // Kombo süresi sayacý
         if (comboStep > 0)
         {
             comboTimer += Time.deltaTime;
             if (comboTimer >= comboResetTime) ResetCombo();
         }
 
+        // --- SALDIRI KONTROLÜ ---
         if (Time.time >= nextAttackTime)
         {
-            // --- HAVA / ÖZEL SALDIRI (Q) ---
-            if (playerController.isGrounded == false)
+            // 1. ÖZEL SALDIRI (Q)
+            // ARTIK ÞART VAR: Hem Q'ya basýlacak HEM DE skill açýlmýþ (True) olacak.
+            if (Input.GetKeyDown(specialAttackInput) && isSpecialAttackUnlocked)
             {
-                if (Input.GetKeyDown(airAttackInput))
-                {
-                    PerformSpecialAttack(); // Ýsmi deðiþtirdik
-                    nextAttackTime = Time.time + 1f / attackRate;
-                }
+                PerformSpecialAttack();
+                nextAttackTime = Time.time + 1f / attackRate;
             }
-            // --- YER SALDIRISI (J) ---
-            else
+
+            // 2. NORMAL KOMBO (J)
+            // Bu sadece YERDE çalýþýr.
+            else if (Input.GetKeyDown(KeyCode.J) && playerController.isGrounded)
             {
-                if (Input.GetKeyDown(KeyCode.J))
-                {
-                    PerformComboAttack();
-                    nextAttackTime = Time.time + 1f / attackRate;
-                }
+                PerformComboAttack();
+                nextAttackTime = Time.time + 1f / attackRate;
             }
         }
     }
@@ -86,16 +84,14 @@ public class PlayerCombat : MonoBehaviour
         if (comboStep >= 3) comboStep = 0;
     }
 
-    // --- ÖZEL SALDIRI FONKSÝYONU ---
+    // --- ÖZEL SALDIRI ---
     void PerformSpecialAttack()
     {
-        // ARTIK SENÝN YAZDIÐIN ÝSMÝ KULLANIYOR
         anim.SetTrigger(specialAttackAnimName);
-
-        // Mavi menzili kullan
-        DealDamage(airAttackDamage, airAttackRange, airAttackOffset);
+        DealDamage(specialAttackDamage, specialAttackRange, specialAttackOffset);
     }
 
+    // --- ORTAK HASAR FONKSÝYONU ---
     void DealDamage(int dmg, float range, float offset)
     {
         float direction = Mathf.Sign(transform.localScale.x);
@@ -124,6 +120,6 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.DrawWireSphere(new Vector2(transform.position.x + (direction * groundAttackOffset), transform.position.y), groundAttackRange);
 
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(new Vector2(transform.position.x + (direction * airAttackOffset), transform.position.y), airAttackRange);
+        Gizmos.DrawWireSphere(new Vector2(transform.position.x + (direction * specialAttackOffset), transform.position.y), specialAttackRange);
     }
 }

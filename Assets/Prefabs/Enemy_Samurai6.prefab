@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 974824649379067864}
   - component: {fileID: 6655176753152091982}
   - component: {fileID: 2742508706895498317}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Enemy_Samurai6
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 3
   m_Sprite: {fileID: 815424164945274260, guid: 6232bdea8f94d734b9325f00b12f9314, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 100
+  currentHealth: 0
   walkSpeed: 1.5
   runSpeed: 4
   spriteFaceLeft: 0
@@ -219,6 +220,7 @@ MonoBehaviour:
   attackIntName: AttackInt
   hurtTriggerName: Hurt
   deadBoolName: IsDead
+  deathYOffset: -0.3
 --- !u!114 &2742508706895498317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,5 +234,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 100
-  currentHealth: 100
+  currentHealth: 0
   healthSlider: {fileID: 0}

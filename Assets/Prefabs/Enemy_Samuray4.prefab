@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 100
+  currentHealth: 0
   walkSpeed: 1.5
   runSpeed: 4
   spriteFaceLeft: 0
@@ -212,7 +213,7 @@ MonoBehaviour:
   idleDuration: 2
   attackRate: 1
   damageAmount: 20
-  maxComboCount: 3
+  maxComboCount: 2
   walkAnimName: isWalking
   runAnimName: isRunning
   attackTriggerName: AttackTrigger

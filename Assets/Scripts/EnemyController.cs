@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Can Ayarlarý")]
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
 
     [Header("Hareket Ayarlarý")]
     public float walkSpeed = 1.5f;
@@ -216,24 +216,31 @@ public class EnemyController : MonoBehaviour
         isDead = true;
         Debug.Log("Düþman Öldü!");
 
+        // 1. Ölüm animasyonunu oynat
         anim.SetBool(deadBoolName, true);
         anim.SetBool(runAnimName, false);
         anim.SetBool(walkAnimName, false);
 
-        // Fiziði ve Çarpýþmayý Kapat
-        rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        GetComponent<Collider2D>().enabled = false;
+        // 2. Fiziði kapat (Havada asýlý kalmasýn veya itilmesin)
+        rb.linearVelocity = Vector2.zero; // Unity 6 ise bunu kullan
+                                          // rb.velocity = Vector2.zero;    // Eski Unity ise bunu kullan
 
-        // --- YENÝ KISIM: INSPECTOR'DAN AYARLANAN DEÐERÝ KULLAN ---
-        // Mevcut Y pozisyonuna senin belirlediðin (deathYOffset) deðeri ekler.
+        rb.bodyType = RigidbodyType2D.Kinematic; // Fizik etkilenmesini kapat
+        GetComponent<Collider2D>().enabled = false; // Ýçinden geçilebilir yap
+
+        // 3. Karakteri biraz aþaðý kaydýr (Görsel düzelme)
         transform.position = new Vector3(
             transform.position.x,
             transform.position.y + deathYOffset,
             transform.position.z
         );
-        // ----------------------------------------------------------
 
+        // 4. (YENÝ VE ÖNEMLÝ KISIM) 
+        // 2.5 saniye sonra objeyi oyundan tamamen sil.
+        // Asansör ancak bu iþlem gerçekleþince çalýþýr.
+        Destroy(gameObject, 2.5f);
+
+        // 5. Bu scripti kapat (Artýk hareket etmesin)
         this.enabled = false;
     }
 }

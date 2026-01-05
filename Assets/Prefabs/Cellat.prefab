@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6825759169866798531}
   - component: {fileID: 7694217896218038423}
   - component: {fileID: 2418722020725319584}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Cellat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0038642883, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -188,7 +188,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.90625, y: 1.78125}
+  m_Size: {x: 1.2338943, y: 1.78125}
   m_EdgeRadius: 0
 --- !u!114 &7694217896218038423
 MonoBehaviour:
@@ -203,15 +203,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 100
+  currentHealth: 0
   walkSpeed: 1.5
   runSpeed: 4
+  spriteFaceLeft: 1
   detectionRange: 6
   stopDistance: 1.2
   patrolDuration: 2
   idleDuration: 2
   attackRate: 1
-  damageAmount: 5
+  damageAmount: 20
   maxComboCount: 2
+  walkAnimName: isWalking
+  runAnimName: isRunning
+  attackTriggerName: AttackTrigger
+  attackIntName: AttackInt
+  hurtTriggerName: Hurt
+  deadBoolName: IsDead
+  deathYOffset: -0.15
 --- !u!114 &2418722020725319584
 MonoBehaviour:
   m_ObjectHideFlags: 0
