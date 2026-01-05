@@ -3,31 +3,43 @@ using UnityEngine;
 public class ParallaxLayer : MonoBehaviour
 {
     private float length, startpos;
+    private float startposY;
     public GameObject cam;
-    public float parallaxEffect; // 0 ile 1 arası değer (1 = Hiç hareket etmez, 0 = Kamerayla aynı hızda)
+    
+    [Header("Parallax AyarlarÄ±")]
+    [Tooltip("1 = Arkaplan hiÃ§ kÄ±mÄ±ldamaz (GÃ¶kyÃ¼zÃ¼), 0 = Karakterle aynÄ± hÄ±zda gider")]
+    public float parallaxEffect; 
+
+    [Tooltip("Bu katman sonsuza kadar kendini tekrar etsin mi?")]
+    public bool isInfinite; 
 
     void Start()
     {
         startpos = transform.position.x;
-        // Resmin genişliğini alıyoruz (SpriteRenderer olduğunu varsayarak)
+        startposY = transform.position.y;
+        
+        
+        // Sprite'Ä±n uzunluÄŸunu otomatik alÄ±yoruz
         length = GetComponent<SpriteRenderer>().bounds.size.x;
 
-        // Eğer kamerayı elle atamazsan otomatik bulsun
         if (cam == null)
-            cam = GameObject.Find("Main Camera");
+            cam = Camera.main.gameObject;
     }
 
-    void Update()
+    void LateUpdate() // Kamera takibi iÃ§in LateUpdate en iyisidir, titremeyi Ã¶nler
     {
-        // Kameranın ne kadar ilerlediğini hesapla (Parallax hızına göre)
+        // KameranÄ±n ne kadar hareket ettiÄŸine gÃ¶re 'sanal' pozisyon (temp) ve 'gerÃ§ek' hareket (dist)
         float temp = (cam.transform.position.x * (1 - parallaxEffect));
         float dist = (cam.transform.position.x * parallaxEffect);
 
-        // Objeyi yeni pozisyona taşı
+        // Objeyi yeni pozisyona taÅŸÄ± (Y pozisyonunu koruyarak)
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
 
-        // Sonsuz döngü kontrolü (Resim bitince başa sarma)
-        if (temp > startpos + length) startpos += length;
-        else if (temp < startpos - length) startpos -= length;
+        // EÄŸer sonsuz dÃ¶ngÃ¼ aÃ§Ä±ksa resim bittiÄŸinde baÅŸa sar
+        if (isInfinite)
+        {
+            if (temp > startpos + length) startpos += length;
+            else if (temp < startpos - length) startpos -= length;
+        }
     }
 }
