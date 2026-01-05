@@ -23,7 +23,7 @@ public class PlayerRespawn : MonoBehaviour
     IEnumerator Respawn()
     {
         // Ölüm anı
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.simulated = false; // fizik durur
 
         // (istersen animasyon/ses burada)
