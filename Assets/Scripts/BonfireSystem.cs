@@ -1,71 +1,66 @@
 using UnityEngine;
-using UnityEngine.Events; // Event sistemi için gerekli
+using UnityEngine.Events;
 
 public class BonfireSystem : MonoBehaviour
 {
-    [Header("UI Ayarlarý")]
-    public GameObject tusGorseli; // "E" tuþu görseli (Canvas içindeki obje)
+    [Header("Ayarlar")]
+    public KeyCode interactKey = KeyCode.E;
+    private bool isInRange = false; // Oyuncu yakýn mý?
 
-    [Header("Oyun Mantýðý")]
-    public KeyCode etkilesimTusu = KeyCode.E;
-    public bool etkilesimdeMi = false; // Oyuncu alanýn içinde mi?
+    [Header("Görsel Efektler")]
+    public GameObject uiText; // "E'ye Bas" yazýsý
+    // public GameObject fireParticle; // Ýstersen ateþ efekti ekle
 
-    [Header("Olaylar (Events)")]
-    // Buraya Inspector üzerinden baþka scriptleri baðlayabilirsin
-    public UnityEvent onRest;
-
-    void Start()
-    {
-        // Baþlangýçta tuþ görselini kapat
-        if (tusGorseli != null)
-            tusGorseli.SetActive(false);
-    }
+    [Header("Olaylar")]
+    public UnityEvent OnRest; // Inspector'daki event kutusu
 
     void Update()
     {
-        // Eðer oyuncu alanýn içindeyse VE "E" tuþuna bastýysa
-        if (etkilesimdeMi && Input.GetKeyDown(etkilesimTusu))
+        if (isInRange && Input.GetKeyDown(interactKey))
         {
-            BonfireYakal();
+            RestAtBonfire();
         }
     }
 
-    void BonfireYakal()
+    void RestAtBonfire()
     {
-        Debug.Log("BONFIRE YAKILDI / DÝNLENÝLDÝ");
+        Debug.Log("Bonfire Yakýldý! Oyun Kaydedildi.");
 
-        // 1. Caný Doldurma (Örnek Kod)
-        // PlayerHealth.instance.HealFull(); 
+        // --- KAYIT SÝSTEMÝ (EN ÖNEMLÝ KISIM) ---
+        // Bonfire'ýn konumunu kaydet
+        PlayerPrefs.SetFloat("RespawnX", transform.position.x);
+        PlayerPrefs.SetFloat("RespawnY", transform.position.y);
 
-        // 2. Oyunu Kaydetme
-        // SaveSystem.SaveGame();
+        // Hangi sahnede olduðumuzu kaydet (Geri dönmek için)
+        PlayerPrefs.SetString("SavedLevel", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
-        // 3. Düþmanlarý Yenileme (Souls mantýðý)
-        // EnemyManager.RespawnAll();
+        // Kayýt olduðunu bildiren bayraðý kaldýr (Artýk kayýtlý bir yerimiz var)
+        PlayerPrefs.SetInt("HasSave", 1);
 
-        // Inspector'dan baðladýðýn eventleri çalýþtýr
-        onRest.Invoke();
+        PlayerPrefs.Save(); // Veriyi diske yaz
+        // ----------------------------------------
+
+        // Inspector'da baðladýðýn diðer olaylarý tetikle (Can doldurma vs.)
+        OnRest.Invoke();
     }
 
-    // --- ALAN KONTROLÜ (TRIGGER) ---
-
+    // Oyuncu alana girdi
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            etkilesimdeMi = true;
-            if (tusGorseli != null)
-                tusGorseli.SetActive(true); // "E" tuþunu göster
+            isInRange = true;
+            if (uiText != null) uiText.SetActive(true);
         }
     }
 
+    // Oyuncu alandan çýktý
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            etkilesimdeMi = false;
-            if (tusGorseli != null)
-                tusGorseli.SetActive(false); // "E" tuþunu gizle
+            isInRange = false;
+            if (uiText != null) uiText.SetActive(false);
         }
     }
 }

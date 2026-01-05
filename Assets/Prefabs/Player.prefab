@@ -122,8 +122,10 @@ GameObject:
   - component: {fileID: 6559508639216097520}
   - component: {fileID: 1985524916051503849}
   - component: {fileID: 1390335511381623825}
-  - component: {fileID: 4331795759562283763}
   - component: {fileID: 2915250649737095126}
+  - component: {fileID: 9067950402077558353}
+  - component: {fileID: 420745630049919169}
+  - component: {fileID: 8542372409751065492}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -147,6 +149,7 @@ Transform:
   - {fileID: 7068657803575885018}
   - {fileID: 568709383305249238}
   - {fileID: 644946275574539777}
+  - {fileID: 328371665820687782}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &582862792200712922
@@ -195,7 +198,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 815424164945274260, guid: d0214b3b4177a79429e3ba9517ef50e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -219,7 +222,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.6223037
+  m_Mass: 0.6
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -232,7 +235,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &208182537713697486
 Animator:
@@ -270,6 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
   jumpForce: 3.5
+  isGrounded: 0
 --- !u!61 &1985524916051503849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -277,7 +281,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3387177322508865647}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -330,24 +334,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AttackCombo
   anim: {fileID: 208182537713697486}
   comboResetTime: 0.5
---- !u!114 &4331795759562283763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3387177322508865647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e94ae36494589a44aab33f3b6296fd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 100
-  currentHealth: 0
-  healthBarImage: {fileID: 0}
-  gameOverPanel: {fileID: 0}
-  deathVolume: {fileID: 0}
-  effectSpeed: 0.5
 --- !u!114 &2915250649737095126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +349,86 @@ MonoBehaviour:
   kayganMateryal: {fileID: 6200000, guid: afb36784b366d2344b45822cb20fd040, type: 2}
   durmaMateryali: {fileID: 6200000, guid: 7c299487a5f111749bb80a8e308720ca, type: 2}
   yatayGirdiEsigi: 0.01
+--- !u!114 &9067950402077558353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387177322508865647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cec8bbd276ae843ae43e6247fb8174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+  playerController: {fileID: 6559508639216097520}
+  attackRate: 1
+  groundAttackOffset: 1
+  groundAttackRange: 0.8
+  groundDamage: 20
+  comboResetTime: 1
+  airAttackInput: 113
+  specialAttackAnimName: Special_AttackTrigger
+  airAttackOffset: 0.8
+  airAttackRange: 1.2
+  airAttackDamage: 25
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &420745630049919169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387177322508865647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecdd64d570f39d34cac48e888ca6af6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZeminKontrol
+  ayakNoktasi: {fileID: 328371665820687782}
+  kutuBoyutu: {x: -1.37, y: 0.98}
+  zeminKatmani:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!70 &8542372409751065492
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387177322508865647}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.22000003, y: 0.36000004}
+  m_Direction: 0
 --- !u!1 &6991987353904041700
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 568709383305249238}
+  - component: {fileID: 5612985041190117170}
   m_Layer: 0
   m_Name: AttackPoint
   m_TagString: Untagged
@@ -394,6 +461,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8135015898007994141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5612985041190117170
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991987353904041700}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7043996021889835453
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +534,37 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.122, y: 0.086, z: 0}
   m_LocalScale: {x: 0.036567, y: 0.036567, z: 0.036567}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8135015898007994141}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7456435944790276212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328371665820687782}
+  m_Layer: 0
+  m_Name: Kontrol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328371665820687782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7456435944790276212}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8135015898007994141}
