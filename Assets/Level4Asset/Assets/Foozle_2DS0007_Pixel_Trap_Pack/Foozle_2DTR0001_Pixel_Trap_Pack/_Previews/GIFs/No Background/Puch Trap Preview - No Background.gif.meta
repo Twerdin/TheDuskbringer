@@ -1,4 +1,22 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Fireball.png.meta
+guid: 5ff9fd1dfa3921644a587a08e82b9e1c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177430
+  packageName: Free 2D Mega Pack
+  packageVersion: 1.0
+  assetPath: Assets/Brackeys/2D Mega Pack/Effects/Fireball.png
+  uploadId: 386437
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Fireball_0
+  - first:
+      213: 21300002
+    second: Fireball_1
+========
 guid: 602209d27f917e94a99705b19e928f27
 TextureImporter:
   internalIDToNameTable:
@@ -8,6 +26,7 @@ TextureImporter:
   - first:
       213: -4807693617714008348
     second: Puch Trap Preview - No Background_1
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Puch Trap Preview - No Background.gif.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +59,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Fireball.png.meta
+    filterMode: 0
+========
     filterMode: 1
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Puch Trap Preview - No Background.gif.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +77,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,31 +101,42 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Fireball.png.meta
+      name: Fireball_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 17
+        height: 23
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.6740047}
+========
       name: Puch Trap Preview - No Background_0
       rect:
         serializedVersion: 2
@@ -112,19 +146,36 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Puch Trap Preview - No Background.gif.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Fireball.png.meta
+      spriteID: 28a2a405f008c8a458476730f81a6cb6
+      internalID: 21300000
+========
       spriteID: 3190146260e90a0c0800000000000000
       internalID: -4566476272904894189
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Puch Trap Preview - No Background.gif.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Fireball.png.meta
+      name: Fireball_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.46722603, y: 0.5875592}
+========
       name: Puch Trap Preview - No Background_1
       rect:
         serializedVersion: 2
@@ -134,14 +185,20 @@ TextureImporter:
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Puch Trap Preview - No Background.gif.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Fireball.png.meta
+      spriteID: 10d12030ba669cc43944488bc140e6f6
+      internalID: 21300002
+========
       spriteID: 4ee6e3f7024a74db0800000000000000
       internalID: -4807693617714008348
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Puch Trap Preview - No Background.gif.meta
       vertices: []
       indices: 
       edges: []
@@ -150,7 +207,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2eb067b539d4a4f49a83688ffef9f33a
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +217,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Effects/Fireball.png.meta
+      Fireball_0: 21300000
+      Fireball_1: 21300002
+========
       Puch Trap Preview - No Background_0: -4566476272904894189
       Puch Trap Preview - No Background_1: -4807693617714008348
+>>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Puch Trap Preview - No Background.gif.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
