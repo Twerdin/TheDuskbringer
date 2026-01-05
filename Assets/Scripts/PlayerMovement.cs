@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
         anim.SetBool("IsGrounded", isGrounded);
         anim.SetBool("isJumping", isJumping); 
-        
+
     }
 
     void Move()
@@ -78,4 +78,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-
