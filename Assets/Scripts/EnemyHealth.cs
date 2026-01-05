@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI; // UI kullanacaðýmýz için þart
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -45,7 +45,11 @@ public class EnemyHealth : MonoBehaviour
         {
             // EnemyController içindeki TakeDamage fonksiyonunu çaðýr (Hurt animasyonu için)
             if (enemyController != null)
-                enemyController.TakeDamage();
+            {
+                // DÜZELTÝLEN KISIM BURASI:
+                // Parantez içine yukarýdan gelen 'damage' deðiþkenini yazdýk.
+                enemyController.TakeDamage(damage);
+            }
         }
     }
 
@@ -64,7 +68,7 @@ public class EnemyHealth : MonoBehaviour
         // Collider'ý kapat ki kýlýç içinden geçsin
         GetComponent<Collider2D>().enabled = false;
 
-        // 5 Saniye sonra cesedi yok et (Ýstersen kapatabilirsin)
+        // 5 Saniye sonra cesedi yok et
         Destroy(gameObject, 5f);
     }
 }
