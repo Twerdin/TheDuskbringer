@@ -1,16 +1,20 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
-guid: 442fd3cea383d7f43a9207762b5fa41c
+ HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
+HEAD
+guid: 9884496c9ac25f74eaf4f37f9d149737
+
+guid: de4ebd5a03d66a0448146e29e44801ac
+ main
 TextureImporter:
   fileIDToRecycleName: {}
-========
+
 guid: b36840c4347b7b741ac3845311b0509b
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4658216994807818852
     second: frame_231_delay-0.08s_0
->>>>>>>> main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
+main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -66,13 +70,13 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
-========
+ HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
+
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
->>>>>>>> main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
+ main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
@@ -113,26 +117,26 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
     spriteID: 93626d266fd52854181b0a4e0914f89c
-========
+
     spriteID: 
     internalID: 0
->>>>>>>> main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
+ main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
     vertices: []
     indices: 
     edges: []
     weights: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/-- Example Photos --/Crafting Example.PNG.meta
   spritePackingTag: 
-========
+
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
       frame_231_delay-0.08s_0: 4658216994807818852
   mipmapLimitGroupName: 
->>>>>>>> main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
+ main:Assets/Level4Asset/Sprites/ezgif-split/frame_231_delay-0.08s.gif.meta
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 

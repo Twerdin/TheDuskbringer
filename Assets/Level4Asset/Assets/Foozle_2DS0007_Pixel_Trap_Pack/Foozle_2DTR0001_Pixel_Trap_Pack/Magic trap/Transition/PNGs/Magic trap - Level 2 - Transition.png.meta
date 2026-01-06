@@ -1,53 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-guid: f49b99ddb26b7af4b9cbd7c84f0ea65a
-AssetOrigin:
-  serializedVersion: 1
-  productId: 177430
-  packageName: Free 2D Mega Pack
-  packageVersion: 1.0
-  assetPath: Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png
-  uploadId: 386437
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: AstronautWalk_01
-  - first:
-      213: 21300002
-    second: AstronautWalk_02
-  - first:
-      213: 21300004
-    second: AstronautWalk_03
-  - first:
-      213: 21300006
-    second: AstronautWalk_04
-  - first:
-      213: 21300008
-    second: AstronautWalk_05
-  - first:
-      213: 21300010
-    second: AstronautWalk_06
-  - first:
-      213: 21300012
-    second: AstronautWalk_07
-  - first:
-      213: 21300014
-    second: AstronautIdle
-  - first:
-      213: 21300016
-    second: AstronautJump
-  - first:
-      213: 21300018
-    second: AstronautArm
-  - first:
-      213: 21300020
-    second: AstronautBigGun
-  - first:
-      213: 21300022
-    second: AstronautPistol
-========
-guid: 41d58fbb13589d5428973b2b0d962b0c
+guid: 5d6e134dd3174064390e0d4b12457eb5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -71,7 +23,6 @@ TextureImporter:
   - first:
       213: 7301280801243879492
     second: Magic trap - Level 2 - Transition_6
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,11 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-    filterMode: 0
-========
     filterMode: 1
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -122,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,174 +93,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      name: AstronautWalk_01
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 224
-        width: 17
-        height: 32
-      alignment: 9
-      pivot: {x: 0.54745257, y: -0.0021009445}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee8003976c0f66743994ddb63fc2744d
-      internalID: 21300000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AstronautWalk_02
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 224
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.52520895, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96331e7fcccfd3d4cbe925fa50d2b221
-      internalID: 21300002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AstronautWalk_03
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 224
-        width: 15
-        height: 32
-      alignment: 9
-      pivot: {x: 0.508963, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ff6d78b27c27e949a0ad9216b529164
-      internalID: 21300004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AstronautWalk_04
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 224
-        width: 15
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33427e50e2b984140b53ced1d0931408
-      internalID: 21300006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AstronautWalk_05
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 191
-        width: 15
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3c176ae2c1189f4fa58098deb1606a3
-      internalID: 21300008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AstronautWalk_06
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 191
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.52941036, y: 0.0021004677}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5345b3c8bbea634fb24b59a1563d5ed
-      internalID: 21300010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AstronautIdle
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 140
-        width: 15
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5196411, y: 0.0013155937}
-========
       name: Magic trap - Level 2 - Transition_0
       rect:
         serializedVersion: 2
@@ -323,36 +127,19 @@ TextureImporter:
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      spriteID: f4a4da522c0a1dc46891a49f527a4ad2
-      internalID: 21300014
-========
       spriteID: 51e6aa4ab0dc17380800000000000000
       internalID: -8975167132481720811
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      name: AstronautJump
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 140
-        width: 17
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5149484, y: 0.0016395815}
-========
       name: Magic trap - Level 2 - Transition_1
       rect:
         serializedVersion: 2
@@ -362,36 +149,19 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      spriteID: 81640a2191f29254195c38d71a36bfb2
-      internalID: 21300016
-========
       spriteID: 2912d622bc9f36ca0800000000000000
       internalID: -6024697225640337006
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      name: AstronautArm
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 153
-        width: 12
-        height: 5
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-========
       name: Magic trap - Level 2 - Transition_2
       rect:
         serializedVersion: 2
@@ -401,38 +171,19 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cbbad4cfa32d524588159f552113399
-      internalID: 21300018
-========
       tessellationDetail: -1
       bones: []
       spriteID: 9c5a67b8693ec6cc0800000000000000
       internalID: -3716345356763093559
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      name: AstronautBigGun
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 155
-        width: 24
-        height: 9
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-========
       name: Magic trap - Level 2 - Transition_3
       rect:
         serializedVersion: 2
@@ -442,38 +193,19 @@ TextureImporter:
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      tessellationDetail: 0
-      bones: []
-      spriteID: 064df71b5e374f449b6b10276df8191d
-      internalID: 21300020
-========
       tessellationDetail: -1
       bones: []
       spriteID: 9dfd10cd009273c70800000000000000
       internalID: 8950667868089999321
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      name: AstronautPistol
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 149
-        width: 5
-        height: 4
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-========
       name: Magic trap - Level 2 - Transition_4
       rect:
         serializedVersion: 2
@@ -483,17 +215,10 @@ TextureImporter:
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f1ad5cced2c5e04e900ab199535e945
-      internalID: 21300022
-========
       tessellationDetail: -1
       bones: []
       spriteID: b08b125017325b190800000000000000
@@ -542,7 +267,6 @@ TextureImporter:
       bones: []
       spriteID: 4485583743c535560800000000000000
       internalID: 7301280801243879492
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
       vertices: []
       indices: 
       edges: []
@@ -551,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e3d144e2e79b8824f9072e8c02072279
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -561,19 +285,6 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Characters/Astronaut.png.meta
-      AstronautArm: 21300018
-      AstronautBigGun: 21300020
-      AstronautIdle: 21300014
-      AstronautJump: 21300016
-      AstronautPistol: 21300022
-      AstronautWalk_01: 21300000
-      AstronautWalk_02: 21300002
-      AstronautWalk_03: 21300004
-      AstronautWalk_04: 21300006
-      AstronautWalk_05: 21300008
-      AstronautWalk_06: 21300010
-========
       Magic trap - Level 2 - Transition_0: -8975167132481720811
       Magic trap - Level 2 - Transition_1: -6024697225640337006
       Magic trap - Level 2 - Transition_2: -3716345356763093559
@@ -581,7 +292,6 @@ TextureImporter:
       Magic trap - Level 2 - Transition_4: -7947406999100999669
       Magic trap - Level 2 - Transition_5: -5402593471100811724
       Magic trap - Level 2 - Transition_6: 7301280801243879492
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Magic trap/Transition/PNGs/Magic trap - Level 2 - Transition.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

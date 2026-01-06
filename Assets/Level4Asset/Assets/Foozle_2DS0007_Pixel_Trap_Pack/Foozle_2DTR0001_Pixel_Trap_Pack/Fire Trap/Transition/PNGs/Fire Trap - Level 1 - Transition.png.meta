@@ -1,41 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png.meta
-guid: 1d56190137cbd134884b27ac6ac58402
-AssetOrigin:
-  serializedVersion: 1
-  productId: 177430
-  packageName: Free 2D Mega Pack
-  packageVersion: 1.0
-  assetPath: Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png
-  uploadId: 386437
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 21300000
-    second: Firehead_0
-  - first:
-      213: 21300002
-    second: Firehead_1
-  - first:
-      213: 21300004
-    second: Firehead_2
-  - first:
-      213: 21300006
-    second: Firehead_3
-  - first:
-      213: 21300008
-    second: FireheadEnemy_0
-  - first:
-      213: 21300010
-    second: FireheadEnemy_1
-  - first:
-      213: 21300012
-    second: FireheadEnemy_2
-  - first:
-      213: 21300014
-    second: FireheadEnemy_3
-========
-guid: 8ee6931aed0537544be534ed521621a6
+guid: b45e7be022f8d7b4c930b73b933932bc
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -53,7 +17,6 @@ TextureImporter:
   - first:
       213: -2707123830204470994
     second: Fire Trap - Level 1 - Transition_4
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/Fire Trap - Level 1 - Transition.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -86,11 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png.meta
-    filterMode: 0
-========
     filterMode: 1
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/Fire Trap - Level 1 - Transition.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -104,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,42 +87,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png.meta
-      name: FireheadEnemy_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 14
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-========
       name: Fire Trap - Level 1 - Transition_0
       rect:
         serializedVersion: 2
@@ -173,36 +121,19 @@ TextureImporter:
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/Fire Trap - Level 1 - Transition.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png.meta
-      spriteID: 7f2bbf5531444f14a883114caf962f59
-      internalID: 21300008
-========
       spriteID: 1d9c995889c4847d0800000000000000
       internalID: -2934010939271689775
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/Fire Trap - Level 1 - Transition.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png.meta
-      name: FireheadEnemy_1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 14
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-========
       name: Fire Trap - Level 1 - Transition_1
       rect:
         serializedVersion: 2
@@ -212,17 +143,12 @@ TextureImporter:
         height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/Fire Trap - Level 1 - Transition.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png.meta
-      spriteID: 8c8ef284a8222df42ab635f40b7c284f
-      internalID: 21300010
-========
       spriteID: 897b3e4fdf1487470800000000000000
       internalID: 8392530464596015000
       vertices: []
@@ -291,51 +217,6 @@ TextureImporter:
       bones: []
       spriteID: e29eaa9283d5e6ad0800000000000000
       internalID: -2707123830204470994
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/Fire Trap - Level 1 - Transition.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireheadEnemy_2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 14
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c129c8b3ad36b841b490b78581dd305
-      internalID: 21300012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FireheadEnemy_3
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 0
-        width: 14
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 365b2be916ec76646bbf2f378c23c756
-      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -344,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 14e0762ce8f107d4bb896bf31518449c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -354,18 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Gothic/FireheadEnemy.png.meta
-      FireheadEnemy_0: 21300008
-      FireheadEnemy_1: 21300010
-      FireheadEnemy_2: 21300012
-      FireheadEnemy_3: 21300014
-========
       Fire Trap - Level 1 - Transition_0: -2934010939271689775
       Fire Trap - Level 1 - Transition_1: 8392530464596015000
       Fire Trap - Level 1 - Transition_2: 7184651094167703652
       Fire Trap - Level 1 - Transition_3: -9045971660374061262
       Fire Trap - Level 1 - Transition_4: -2707123830204470994
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/Fire Trap/Transition/PNGs/Fire Trap - Level 1 - Transition.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
