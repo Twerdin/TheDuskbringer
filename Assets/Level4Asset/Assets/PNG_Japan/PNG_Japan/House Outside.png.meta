@@ -103,12 +103,12 @@ TextureImporter:
       name: House Outside_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1392
-        height: 487
+        x: 14
+        y: 14
+        width: 1362
+        height: 459
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4dd4ffe2df842a840b856fa91a3e73b0
     internalID: 0
     vertices: []
     indices: 
