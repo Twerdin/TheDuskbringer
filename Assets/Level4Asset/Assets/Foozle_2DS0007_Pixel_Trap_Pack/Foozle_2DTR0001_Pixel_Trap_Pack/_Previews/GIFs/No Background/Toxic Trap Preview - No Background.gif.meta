@@ -1,6 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+ HEAD
 guid: ea11b3e2ecd03aa488ab163ed4ec9b6c
+
+guid: 5904316e3d7407b4bb8d0d101e801744
+ main
 AssetOrigin:
   serializedVersion: 1
   productId: 177430
@@ -19,7 +23,7 @@ TextureImporter:
   - first:
       213: 21300004
     second: GiantBeetle_2
-========
+
 guid: e980790c91454bd44ad163b102f2fb0a
 TextureImporter:
   internalIDToNameTable:
@@ -32,7 +36,7 @@ TextureImporter:
   - first:
       213: -1805759799185188301
     second: Toxic Trap Preview - No Background_2
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+ main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -65,11 +69,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
     filterMode: 0
-========
+
     filterMode: 1
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -132,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
       name: GiantBeetle_0
       rect:
         serializedVersion: 2
@@ -140,7 +144,7 @@ TextureImporter:
         y: 10
         width: 78
         height: 109
-========
+
       name: Toxic Trap Preview - No Background_0
       rect:
         serializedVersion: 2
@@ -148,7 +152,7 @@ TextureImporter:
         y: 234
         width: 22
         height: 22
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+ main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,19 +161,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
       spriteID: 762a6c646fffb8a4781d1953512f09bc
       internalID: 21300000
-========
+
       spriteID: a9df74d5216253090800000000000000
       internalID: -8055490498165998182
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
       name: GiantBeetle_1
       rect:
         serializedVersion: 2
@@ -177,7 +181,7 @@ TextureImporter:
         y: 10
         width: 80
         height: 109
-========
+
       name: Toxic Trap Preview - No Background_1
       rect:
         serializedVersion: 2
@@ -185,7 +189,7 @@ TextureImporter:
         y: 189
         width: 22
         height: 22
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,19 +198,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
       spriteID: 7a55b3b6043641943b2c832f75892f9a
       internalID: 21300002
-========
+
       spriteID: 87fd3cf5dc2a9e0a0800000000000000
       internalID: -6851766355108831368
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
       name: GiantBeetle_2
       rect:
         serializedVersion: 2
@@ -214,7 +218,7 @@ TextureImporter:
         y: 10
         width: 80
         height: 109
-========
+
       name: Toxic Trap Preview - No Background_2
       rect:
         serializedVersion: 2
@@ -222,7 +226,7 @@ TextureImporter:
         y: 0
         width: 112
         height: 151
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+ main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,13 +235,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
       spriteID: 83505ae77f2e49a4782d8dcbacbb5506
       internalID: 21300004
-========
+
       spriteID: 33ad2eba707a0f6e0800000000000000
       internalID: -1805759799185188301
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+ main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
       vertices: []
       indices: 
       edges: []
@@ -256,15 +260,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
+ HEAD:Assets/Brackeys/2D Mega Pack/Enemies/Insects/GiantBeetle.png.meta
       GiantBeetle_0: 21300000
       GiantBeetle_1: 21300002
       GiantBeetle_2: 21300004
-========
+
       Toxic Trap Preview - No Background_0: -8055490498165998182
       Toxic Trap Preview - No Background_1: -6851766355108831368
       Toxic Trap Preview - No Background_2: -1805759799185188301
->>>>>>>> main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
+main:Assets/Level4Asset/Assets/Foozle_2DS0007_Pixel_Trap_Pack/Foozle_2DTR0001_Pixel_Trap_Pack/_Previews/GIFs/No Background/Toxic Trap Preview - No Background.gif.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
