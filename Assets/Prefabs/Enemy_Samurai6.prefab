@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   walkSpeed: 1.5
   runSpeed: 4
   spriteFaceLeft: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   patrolDuration: 2
   idleDuration: 2
   attackRate: 1
-  damageAmount: 20
+  damageAmount: 10
   maxComboCount: 3
   walkAnimName: isWalking
   runAnimName: isRunning
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   healthSlider: {fileID: 0}
 --- !u!70 &-9128813907953062533
 CapsuleCollider2D:

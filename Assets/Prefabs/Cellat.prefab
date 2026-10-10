@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   walkSpeed: 1.5
   runSpeed: 4
   spriteFaceLeft: 1
